@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Generated</title>
+</head>
+<body>
+    <h1>Your list of <span th:text="${numToGenerate}"></span> random numbers</h1>
+    <table>
+        <tr th:each="image: ${imageList}">
+            <td><img th:src="${image.imgUrl}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
